@@ -29,11 +29,16 @@ public class testController {
 		
 		if(res>0) {	
 			System.out.println("디비연결성공");
-			return "home";
+			return "test";
 		}else {
 			System.out.println("디비연결실패");
 			return "test";
 		}
+	}
+	
+	@RequestMapping(value="/", method=RequestMethod.GET)
+	public String test1() {
+		return "test";
 	}
 	
 }

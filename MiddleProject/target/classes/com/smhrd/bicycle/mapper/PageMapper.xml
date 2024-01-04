@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.smhrd.bicycle.mapper.PageMapper"> <!-- 위치는 이 파일 있는 위치임 -->
+  	<!-- 인터페이스+멤버맵퍼 사용할 경우 인터페이스와 멤버맵퍼 이름을 서로 똑같이 만들어야 함 -->
+  </mapper>

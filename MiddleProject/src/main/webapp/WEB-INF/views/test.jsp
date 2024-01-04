@@ -6,7 +6,7 @@
 	<title>test</title>
 </head>
 <body>
-<form action="test">
+<form action="user/login.do">
 <input><h1>hi</h1>
 <a><input name="id" type="text"></a>
 <a><input name="pw" type="password"></a>

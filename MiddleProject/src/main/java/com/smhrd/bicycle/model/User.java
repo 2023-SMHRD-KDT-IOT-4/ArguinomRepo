@@ -1,11 +1,22 @@
 package com.smhrd.bicycle.model;
 
+import org.springframework.stereotype.Controller;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+
+@NoArgsConstructor   // 기본 생성자
+@AllArgsConstructor  // 모든 필드 초기화하는 생성자
+@Setter  // setter 생성
+@Getter  // getter 생성
+
+@Controller
 //유저 정보 객체
 public class User {
 	
-	// 유저 정보 
-	public class user_info {
 
 	    // 유저 아이디 
 	    private String user_id;
@@ -84,7 +95,14 @@ public class User {
 	        this.user_role = user_role;
 	    }
 
-	}
 	
+	    // 생성자는 반환타입 없음
+	    public User(String user_id, String user_pw) {
+	    	this.user_id = user_id;
+	    	this.user_pw = user_pw;
+	    	
+	    }
+
+	    
 	
 }

@@ -35,3 +35,4 @@ public class HomeController {
 		return "글작성 페이지.jsp";
 	}
 }
+

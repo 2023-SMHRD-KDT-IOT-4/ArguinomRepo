@@ -3,9 +3,7 @@ package com.smhrd.bicycle.model;
 
 //유저 정보 객체
 public class User {
-	
-	// 유저 정보 
-	public class user_info {
+
 
 	    // 유저 아이디 
 	    private String user_id;
@@ -84,7 +82,16 @@ public class User {
 	        this.user_role = user_role;
 	    }
 
-	}
+		public User(String user_id, String user_pw, String user_birthdate, String user_name) {
+			super();
+			this.user_id = user_id;
+			this.user_pw = user_pw;
+			this.user_birthdate = user_birthdate;
+			this.user_name = user_name;
+		}
+	    
+	    
+	
 	
 	
 }

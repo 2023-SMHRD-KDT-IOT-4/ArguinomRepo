@@ -27,7 +27,7 @@ import cpm.smhrd.bicycle.converter.ImageToBase64;
 
 
 
-
+//게시판 컨트롤러
 @Controller
 public class BoardController {
 	

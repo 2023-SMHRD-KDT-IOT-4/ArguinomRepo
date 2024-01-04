@@ -10,7 +10,7 @@ import org.apache.ibatis.annotations.Select;
 import com.smhrd.bicycle.model.Board;
 
 
-
+//게시판 Mapper
 @Mapper
 public interface BoardMapper {
 

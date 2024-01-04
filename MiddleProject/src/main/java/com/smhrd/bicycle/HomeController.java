@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.smhrd.bicycle.mapper.BoardMapper;
 import com.smhrd.bicycle.model.Board;
 
+//페이지 이동 컨트롤러
 @Controller
 public class HomeController {
 	

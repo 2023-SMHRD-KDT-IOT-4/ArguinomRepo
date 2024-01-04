@@ -1,5 +1,7 @@
 package com.smhrd.bicycle.model;
 
+
+//게시판 객체
 public class Board {
 	
 	private int comm_suq;

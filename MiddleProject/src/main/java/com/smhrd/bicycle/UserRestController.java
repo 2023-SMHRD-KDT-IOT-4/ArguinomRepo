@@ -24,7 +24,7 @@ public class UserRestController {
 	UserMapper mapper;
 		
 		//비동기 통신 회원가입(회원가입 제출 버튼 누를 시)
-		@RequestMapping(value="#", method=RequestMethod.POST)
+		@RequestMapping(value="#1112233", method=RequestMethod.POST)
 		public @ResponseBody String write(@RequestParam("user_id") String user_id, @RequestParam("user_pw") String user_pw,
 							@RequestParam("user_birthdate") String user_birthdate, @RequestParam("user_name") String user_name,
 							@RequestParam("user_profile_img") MultipartFile file, HttpServletRequest request) {

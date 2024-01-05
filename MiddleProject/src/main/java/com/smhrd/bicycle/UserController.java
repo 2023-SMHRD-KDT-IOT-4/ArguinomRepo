@@ -19,7 +19,7 @@ public class UserController {
 	@Autowired // 의존성 주입
 	UserMapper mapper; // Usermapper 인터페이스로 가는 거
 	
-	@RequestMapping(value="/user/login.do"  , method=RequestMethod.POST)
+	@RequestMapping(value="/user/login"  , method=RequestMethod.POST)
 	public String login(@RequestParam("user_id") String user_id , @RequestParam("user_pw") String user_pw
 			, HttpSession session) {
 		
@@ -37,7 +37,7 @@ public class UserController {
 	}
 	
 	// 로그아웃
-	@RequestMapping(value="/user/logout.do" , method=RequestMethod.POST)
+	@RequestMapping(value="/user/logout" , method=RequestMethod.POST)
 	public String logout(HttpSession session) {
 		
 		session.invalidate();

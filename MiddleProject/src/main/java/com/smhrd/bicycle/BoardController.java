@@ -35,7 +35,7 @@ public class BoardController {
 	BoardMapper mapper;
 	
 	//글 작성 후 게시 버튼 누르면 db저장 -> 실패시 글 다 날아감
-	@RequestMapping(value="#", method=RequestMethod.POST)
+	@RequestMapping(value="#111", method=RequestMethod.POST)
 	public String write(@ModelAttribute Board b, @RequestPart("photo") MultipartFile file, 
 			          HttpServletRequest request) {
 		
@@ -84,7 +84,7 @@ public class BoardController {
 	}
 	
 	//글 삭제
-	@RequestMapping(value="#", method=RequestMethod.GET)
+	@RequestMapping(value="#@!", method=RequestMethod.GET)
 	public String delete(@RequestParam("comm_suq") String comm_suq,Model model) {
 		int res = mapper.delete(comm_suq);
 		

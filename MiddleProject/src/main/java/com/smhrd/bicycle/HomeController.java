@@ -19,7 +19,7 @@ public class HomeController {
 	BoardMapper mapper;
 	
 	//게시판 페이지 이동 / 글 전체리스트 가져오기
-	@RequestMapping(value="#", method=RequestMethod.GET)
+	@RequestMapping(value="/##", method=RequestMethod.GET)
 	public String index(Model model) {
 		
 		List<Board> list = mapper.boardList();
@@ -30,7 +30,7 @@ public class HomeController {
 	}
 	
 	//글 작성 페이지 이동
-	@RequestMapping(value="#", method=RequestMethod.GET)
+	@RequestMapping(value="###@", method=RequestMethod.GET)
 	public String form() {
 		return "글작성 페이지.jsp";
 	}
